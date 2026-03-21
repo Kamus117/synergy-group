@@ -116,3 +116,31 @@
     border-bottom: none;
   }
 }
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.3rem; 
+  }
+  .statNumber {
+    font-size: 2rem;
+  }
+  .heroTopSection {
+    gap: 1.5rem;
+  }
+  .heroContainer {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+  .heroDescription {
+    font-size: 0.95rem;
+    margin-top: 2rem;
+  }
+  .statItem {
+    flex: 1 1 45%; /* Two stats per row on tiny devices if needed, or wrap all */
+  }
+}

@@ -126,3 +126,43 @@
     width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1.5rem;
+    gap: 2.5rem;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+  .intro {
+    font-size: 1.05rem;
+  }
+  .cardNumber {
+    font-size: 4rem;
+    bottom: 0.5rem;
+    right: 1rem;
+  }
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+  .accordionCard.expanded {
+    height: 400px; /* Allow extra text space */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .cardNumber {
+    font-size: 3rem;
+  }
+  .accordionCard {
+    padding: 2rem 1.5rem;
+    height: 100px;
+  }
+  .accordionCard.expanded {
+    height: 480px; 
+  }
+}

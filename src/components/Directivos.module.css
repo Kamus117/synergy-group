@@ -263,3 +263,42 @@
     padding-top: 40px;
   }
 }
+
+@media (max-width: 480px) {
+  .introText {
+    font-size: 1.1rem;
+  }
+  .profCard {
+    width: 100%;
+    margin: 0;
+    height: 420px;
+  }
+  .circleBg, .quoteOverlay {
+    width: 280px;
+    height: 280px;
+    top: 30px;
+  }
+  .profImage {
+    width: 210px;
+    bottom: 60px;
+  }
+  .namePill {
+    font-size: 1rem;
+    bottom: 20px;
+    padding: 10px 20px;
+  }
+  .quoteOverlay p {
+    font-size: 1rem;
+  }
+  .quoteMarkOpen {
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+  .quoteMarkClose {
+    margin-top: 1rem;
+    font-size: 4rem;
+  }
+  .cardsGrid {
+    padding: 0 1rem;
+  }
+}

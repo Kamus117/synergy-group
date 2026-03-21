@@ -12,6 +12,7 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
+  flex: 0 0 250px; /* Fixed width to balance the right side */
 }
 
 .logoMark {
@@ -25,8 +26,27 @@
   color: var(--color-dark);
 }
 
+.hamburgerBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  z-index: 1000;
+  padding: 0.5rem;
+}
+
+.navContent {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
 .navLinks {
   display: flex;
+  justify-content: center;
+  flex: 1;
   list-style: none;
   gap: 2rem;
 }
@@ -67,7 +87,9 @@
 .socialIcons {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 1.5rem;
+  flex: 0 0 250px; /* Matches the logo width precisely to enforce true center */
 }
 
 .iconLink {
@@ -150,4 +172,101 @@
 .dropdownMenu button:hover {
   background: var(--color-bg-light);
   color: var(--color-primary);
+}
+
+/* Modificadores Mobile */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay.showOverlay {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .hamburgerBtn {
+    display: block;
+  }
+  
+  .navContent {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 350px;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 7rem 2.5rem 2rem;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    transition: right 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 999;
+    overflow-y: auto;
+    gap: 0;
+  }
+
+  .navContent.mobileOpen {
+    right: 0;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+  }
+
+  .navButton {
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+  }
+
+  /* Ajustes menú desplegable para móvil */
+  .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+    display: none; /* Hide default, show on hover */
+    min-width: 100%;
+  }
+
+  .dropdownContainer:hover .dropdownMenu,
+  .dropdownContainer:active .dropdownMenu {
+    display: flex;
+  }
+
+  .socialIcons {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-bg-light);
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .navContent {
+    width: 100%;
+    padding: 7rem 2rem 2rem;
+  }
+  .logoText {
+    font-size: 1.2rem;
+  }
+  .logoMark {
+    height: 35px;
+  }
 }
