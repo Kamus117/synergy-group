@@ -1,0 +1,185 @@
+.footer {
+  background-color: var(--color-dark); /* Gris grafito o negro bate dependiendo de index.css */
+  color: #fff;
+  padding: 6rem 2rem 2rem;
+  font-family: inherit;
+  margin-top: 5rem;
+}
+
+.footerContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 8rem; /* MUCHO aire entre columnas */
+  padding-bottom: 5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brandColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 480px;
+}
+
+.logoContainer {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logoMark {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.logoText {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.proposito {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  font-weight: 300;
+}
+
+.columnTitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.linksColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.linkBtn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  transition: all 0.3s ease;
+  font-weight: 300;
+}
+
+.linkBtn:hover {
+  color: #fff;
+  transform: translateX(4px);
+}
+
+.contactColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 300;
+}
+
+a.contactItem:hover {
+  color: #fff;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.iconLink {
+  color: #fff;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.iconLink:hover {
+  background-color: var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bottomBar {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+@media (max-width: 992px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  .brandColumn {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  .footer {
+    padding: 5rem 1.5rem 2rem;
+  }
+}

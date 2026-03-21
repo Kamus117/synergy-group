@@ -1,0 +1,194 @@
+.sobreNosotrosContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  max-width: 1300px; /* Kept slightly narrower for readability */
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+/* Main Title Style */
+.titleSection {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainTitle {
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 900;
+  color: #585858; 
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #585858 0%, #818181 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-size: 2.8rem;
+  color: var(--color-dark);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-dark);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 4rem;
+}
+
+.spacer {
+  height: 4rem;
+}
+
+/* Floating Blocks for Escenario */
+.block {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  /* Removed: background-color: #fff; and box-shadow */
+  padding: 2rem 0;
+}
+
+.textContent {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blockTitle {
+  font-size: 1.8rem;
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.blockParagraph {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+}
+
+.statsIcons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.statsIcons p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-gray-light);
+}
+
+.imageContainer {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mision Vision Valores Stacked Layout */
+.mvmContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.mvmRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 4rem;
+}
+
+.noBorder {
+  border-bottom: none;
+}
+
+.mvmTitle {
+  flex: 0.3;
+}
+
+.mvmTitle h3 {
+  font-size: 2.2rem;
+  color: var(--color-primary); /* Teal color matching the reference */
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.mvmContent {
+  flex: 0.7;
+}
+
+.mvmContent p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+  margin: 0;
+}
+
+.mvmContent ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.mvmContent li {
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+  padding-left: 1.5rem;
+}
+
+.mvmContent li::before {
+  content: "•";
+  color: var(--color-gray-light);
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -6px;
+}
+
+.mvmContent strong {
+  font-weight: 600;
+  color: var(--color-gray-dark);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .block {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .mvmRow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .imageContainer {
+    order: -1; /* Always show image first on mobile */
+  }
+}

@@ -1,0 +1,265 @@
+.directivosContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.introText {
+  font-size: 1.4rem;
+  color: var(--color-gray-dark);
+  margin-top: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.mainTitle {
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 900;
+  color: #585858; 
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #585858 0%, #818181 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+}
+
+.subtitleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitleLine {
+  width: 40px;
+  height: 3px;
+  background-color: #aaa087;
+}
+
+.subtitleText {
+  color: #aaa087;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+}
+
+/* Cards */
+.cardsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 0 2rem;
+  z-index: 2; 
+  margin-bottom: 2rem; /* Separated from bottom bar */
+}
+
+.profCard {
+  position: relative;
+  width: 360px;
+  height: 480px; /* Enough vertical room for head and pill */
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.circleBg {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: var(--card-bg, #376661); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.profCard:hover .circleBg {
+  background-color: #ffffff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.profImage {
+  position: absolute;
+  bottom: 80px; /* Rests above the pill */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px; /* Reduced scale */
+  height: auto;
+  z-index: 2;
+  transition: opacity 0.4s ease;
+}
+
+.profCard:hover .profImage {
+  opacity: 0.15; 
+}
+
+/* The Name Pill */
+.namePill {
+  position: absolute;
+  bottom: 40px; 
+  background-color: #060606; /* Solid dark/black */
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: var(--font-main);
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  z-index: 3;
+  transition: opacity 0.3s ease;
+}
+
+.profCard:hover .namePill {
+  opacity: 0; 
+}
+
+/* Hover Quote Overlay */
+.quoteOverlay {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 350px; /* Match circle exact size and position */
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.profCard:hover .quoteOverlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quoteOverlay p {
+  color: #585858;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.quoteMarkOpen, .quoteMarkClose {
+  font-family: serif;
+  font-size: 6rem;
+  font-weight: 900;
+  color: #376661; 
+  line-height: 0;
+  position: relative;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.quoteMarkOpen {
+  align-self: flex-start;
+  margin-top: 2rem;
+  margin-left: -1rem;
+  margin-bottom: 2rem;
+}
+
+.quoteMarkClose {
+  align-self: flex-end;
+  margin-right: -1rem;
+  margin-top: 3rem;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  width: 100%;
+  background-color: #585858;
+  padding: 80px 2rem 50px; /* Top padding handles circle overlap */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1; /* Below the circle cards */
+}
+
+.bottomBarContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  color: white;
+  text-align: center;
+}
+
+.bottomBarText {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.decorativeCircles {
+  display: flex;
+  gap: 5px;
+}
+
+.decorativeCircles span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 3.5rem;
+  }
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  .bottomBarContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cardsGrid {
+    margin-bottom: 2rem;
+  }
+  .bottomBar {
+    padding-top: 40px;
+  }
+}

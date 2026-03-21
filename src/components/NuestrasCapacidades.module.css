@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+.header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.8rem;
+  color: var(--color-dark);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-gray-dark);
+}
+
+.accordionWrapper {
+  display: flex;
+  gap: 0;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.accordionCard {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.accordionCard.expanded {
+  flex: 3.5;
+}
+
+/* Background Color Tiers using explicit valid var names from index.css */
+.accordionCard:nth-child(1) { background-color: var(--color-primary); color: #fff; }
+.accordionCard:nth-child(2) { background-color: var(--color-dark); color: #fff; }
+.accordionCard:nth-child(3) { background-color: var(--color-gray-dark); color: #fff; }
+.accordionCard:nth-child(4) { background-color: var(--color-gray-light); color: #fff; }
+.accordionCard:nth-child(5) { background-color: var(--color-beige-dark); color: #fff; }
+
+.cardNumber {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  line-height: 1;
+}
+
+.hiddenNumber {
+  opacity: 0;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  min-width: 300px; /* Previene quiebres de linea bruscos durante transicion */
+  transition: opacity 0.4s ease;
+}
+
+.showContent {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.2s; /* Wait slightly for flex expansion to start naturally */
+}
+
+.cardTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.cardDescription {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 992px) {
+  .accordionWrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .accordionCard {
+    height: 120px;
+    flex: none;
+    transition: height 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  
+  .accordionCard.expanded {
+    height: 350px;
+    flex: none;
+  }
+
+  .cardContent {
+    min-width: unset;
+    width: 100%;
+  }
+}
