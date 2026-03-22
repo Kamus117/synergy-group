@@ -4,7 +4,7 @@ import { PiInstagramLogo, PiFacebookLogo, PiLinkedinLogo, PiYoutubeLogo, PiCaret
 
 const Navbar = ({ activeTab, setActiveTab }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const tabs = ['Inicio', 'Nuestra identidad', 'El problema', 'Nuestras capacidades', 'Nuestros líderes', 'Unirse', 'Contacto'];
+  const tabs = ['Nuestra identidad', 'El problema', 'Nuestras capacidades', 'Nuestros líderes', 'Unirse', 'Contacto'];
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -77,10 +77,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
         </ul>
 
         <div className={styles.socialIcons}>
-          <a href="https://www.instagram.com/synergygroup/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}><PiInstagramLogo size={24} /></a>
-          <a href="https://www.facebook.com/synergygrouparg/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}><PiFacebookLogo size={24} /></a>
           <a href="#" className={styles.iconLink}><PiLinkedinLogo size={24} /></a>
-          <a href="#" className={styles.iconLink}><PiYoutubeLogo size={24} /></a>
         </div>
       </div>
     </nav>

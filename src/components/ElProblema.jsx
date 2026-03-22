@@ -4,7 +4,7 @@ import styles from './SobreNosotros.module.css';
 const ElProblema = () => {
   return (
     <div className={styles.sobreNosotrosContainer}>
-      
+
       {/* SECTION 2: EL PROBLEMA */}
       <h1 className="pageMainTitle animate__animated animate__fadeInDown" style={{ marginBottom: '2rem' }}>
         EL PROBLEMA

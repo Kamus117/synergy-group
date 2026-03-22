@@ -57,11 +57,9 @@ const Hero = () => {
       </div>
 
       <p className={`${styles.heroDescription} animate__animated animate__fadeInUp`} style={{ animationDelay: '0.6s' }}>
-        Synergy Global es una consultora estratégica especializada con una presencia consolidada en el Cono Sur y España, con proyección global. Apoyamos desde pequeñas instituciones a gobiernos, corporaciones y organismos multilaterales en la transformación profunda de sus modelos de salud mental y bienestar.
-        En un mercado de soluciones fragmentadas, nuestro pensamiento innovador proporciona una estructura para resistir y prosperar en entornos de crisis constantes.
-        Combinando una avanzada capacidad de diseño de redes con un conocimiento técnico de vanguardia, traducimos los desafíos más críticos de nuestros clientes —desde la alienación social hasta los riesgos operativos derivados de los problemas del comportamiento humano— en sistemas integrados y preparados para el futuro. Nuestra metodología garantiza una alineación total entre el capital humano, los procesos de gestión y la evidencia científica, impulsando un impacto medible que reconstruye el tejido institucional desde la base.
-        Aportamos una maestría única que fusiona la experiencia en políticas públicas de escala masiva con la agilidad de una consultora flexible. Desde la implementación de observatorios epidemiológicos georreferenciados hasta la respuesta crítica ante incidentes complejos, entregamos soluciones inteligentes, éticas y estrictamente diseñadas a medida de la realidad territorial de cada cliente.
-
+        Synergy Global es una consultora estratégica especializada con una trayectoria consolidada en el Cono Sur y España, transformamos desafíos complejos del comportamiento humano en sistemas de respuesta institucional. <br /><br />
+        En un panorama global marcado por soluciones fragmentadas, nuestra propuesta garantiza la alineación total entre el capital humano y los procesos de gestión. Entregamos soluciones que no solo alivian puntos de dolor críticos, sino que también generan un retorno social y económico tangible. <br /><br />
+        No somos observadores del cambio; nos aseguramos de que el sistema funcione antes de que la crisis se convierta en tragedia.
       </p>
 
       <div className={`${styles.statsContainer} animate__animated animate__fadeInUp`} style={{ animationDelay: '0.8s' }}>

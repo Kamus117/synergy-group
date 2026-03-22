@@ -17,16 +17,15 @@ const Contacto = () => {
           <div className={styles.sedesBox}>
             <div className={styles.sede}>
               <h3>Sede Cono Sur:</h3>
-              <p>Dirección, CABA, Argentina</p>
-              <p>+54 (11) --- ----</p>
-              <p>contacto@synergyglobal.com</p>
+              <p>Ciudad de Buenos Aires, República Argentina.</p>
+              <p>+54 (11) 41594083</p>
+              <p>contacto@coresynergy.info</p>
             </div>
 
             <div className={styles.sede}>
               <h3>Sede España:</h3>
-              <p>Dirección, Madrid, España</p>
-              <p>+34 --- ----</p>
-              <p>contacto@synergyglobal.com</p>
+              <p>Paseo de la Castellana, 194, 28046 Madrid, España</p>
+              <p>contacto@coresynergy.info</p>
             </div>
           </div>
         </div>
