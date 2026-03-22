@@ -114,3 +114,13 @@
     transform: translateX(0);
     transition-delay: 1.4s;
 }
+
+@media (max-width: 768px) {
+    .animatedLogo {
+        width: 140px;
+        height: auto;
+    }
+    .logoTitle {
+        font-size: 24px;
+    }
+}
