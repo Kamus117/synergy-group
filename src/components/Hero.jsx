@@ -49,9 +49,9 @@ const Hero = () => {
         {/* Lado derecho: Titulo animado */}
         <div className={`${styles.heroTitleWrapper} animate__animated animate__fadeInRight`} style={{ animationDelay: '0.4s' }}>
           <h1 className={styles.heroTitle}>
-            Apasionados <br />
-            <span className={styles.textDark}>por el problema;</span> <br />
-            <span className={styles.textPrimary}>libres para crear la solución</span>
+            Innovación <br />
+            <span className={styles.textDark}>al servicio del</span> <br />
+            <span className={styles.textPrimary}>bienestar</span>
           </h1>
         </div>
       </div>

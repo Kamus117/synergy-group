@@ -16,7 +16,7 @@ const Footer = ({ setActiveTab }) => {
             <span className={styles.logoText}>Synergy Group</span>
           </div>
           <p className={styles.tagline}>
-            Apasionados por el problema, libres para crear la solución.
+            Innovación al servicio del bienestar
           </p>
           <p className={styles.proposito}>
             Transformamos desafíos del comportamiento humano en sistemas de resiliencia institucional.
