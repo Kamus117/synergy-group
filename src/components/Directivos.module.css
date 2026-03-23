@@ -112,7 +112,7 @@
   bottom: 80px; /* Rests above the pill */
   left: 50%;
   transform: translateX(-50%);
-  width: 260px; /* Reduced scale */
+  width: 330px; /* Increased from 260px */
   height: auto;
   z-index: 2;
   transition: opacity 0.4s ease;
@@ -280,7 +280,7 @@
     top: 30px;
   }
   .profImage {
-    width: 210px;
+    width: 270px;
     bottom: 60px;
   }
   .namePill {

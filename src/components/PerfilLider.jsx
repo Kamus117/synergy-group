@@ -17,7 +17,7 @@ const PerfilLider = ({ liderId }) => {
         {/* Lado Imagen */}
         <div className={`${styles.imageColumn} animate__animated animate__fadeInLeft`} style={{ animationDelay: '0.2s' }}>
            <div className={styles.circleBg} style={{ backgroundColor: lider.color }}></div>
-           <img src={lider.image} alt={lider.name} className={styles.profImage} />
+           {lider.image && <img src={lider.image} alt={lider.name} className={styles.profImage} />}
         </div>
 
         {/* Lado Info */}

@@ -56,13 +56,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <p className={`${styles.heroDescription} animate__animated animate__fadeInUp`} style={{ animationDelay: '0.6s' }}>
-        Synergy Global es una consultora estratégica especializada con una trayectoria consolidada en el Cono Sur y España, transformamos desafíos complejos del comportamiento humano en sistemas de respuesta institucional. <br /><br />
-        En un panorama global marcado por soluciones fragmentadas, nuestra propuesta garantiza la alineación total entre el capital humano y los procesos de gestión. Entregamos soluciones que no solo alivian puntos de dolor críticos, sino que también generan un retorno social y económico tangible. <br /><br />
-        No somos observadores del cambio; nos aseguramos de que el sistema funcione antes de que la crisis se convierta en tragedia.
-      </p>
-
-      <div className={`${styles.statsContainer} animate__animated animate__fadeInUp`} style={{ animationDelay: '0.8s' }}>
+      <div className={`${styles.statsContainer} animate__animated animate__fadeInUp`} style={{ animationDelay: '0.6s' }}>
         <div className={styles.statItem}>
           <h2 className={styles.statNumber}>+<CountUp end={20} /></h2>
           <p className={styles.statLabel}>AÑOS DE EXPERIENCIA</p>
@@ -84,6 +78,12 @@ const Hero = () => {
           <p className={styles.statLabel}>PERSONAS ALCANZADAS</p>
         </div>
       </div>
+
+      <p className={`${styles.heroDescription} animate__animated animate__fadeInUp`} style={{ animationDelay: '0.8s' }}>
+        Synergy Global es un equipo de consultores con una trayectoria consolidada en Hispanoamérica; transformamos desafíos del comportamiento humano en sistemas de resiliencia institucional. <br /><br />
+        En un panorama global marcado por soluciones fragmentadas, nuestra propuesta garantiza la alineación total entre el capital humano y los procesos de gestión. Entregamos soluciones que no solo alivian puntos de dolor críticos, sino que también generan un retorno social y económico tangible. <br /><br />
+        No somos observadores del cambio; nos aseguramos de que el sistema funcione antes de que la crisis se convierta en tragedia.
+      </p>
     </div>
   );
 };

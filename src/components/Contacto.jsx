@@ -33,7 +33,7 @@ const Contacto = () => {
         {/* Columna Derecha: Formulario de Diagnóstico */}
         <div className={styles.formColumn}>
           <div className={styles.formHeader}>
-            <h2>¿Tiene alguna pregunta? Iniciemos una conversación estratégica.</h2>
+            <h2>Iniciemos una conversación estratégica.</h2>
           </div>
 
           <form className={styles.contactForm}>
