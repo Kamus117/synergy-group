@@ -19,13 +19,13 @@ const Contacto = () => {
               <h3>Sede Cono Sur:</h3>
               <p>Ciudad de Buenos Aires, República Argentina.</p>
               <p>+54 (11) 41594083</p>
-              <p>contacto@coresynergy.info</p>
+              <p>consultoressmya@gmail.com</p>
             </div>
 
             <div className={styles.sede}>
               <h3>Sede España:</h3>
               <p>Paseo de la Castellana, 194, 28046 Madrid, España</p>
-              <p>contacto@coresynergy.info</p>
+              <p>consultoressmya@gmail.com</p>
             </div>
           </div>
         </div>

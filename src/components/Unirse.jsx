@@ -3,7 +3,7 @@ import styles from './Unirse.module.css';
 
 const Unirse = () => {
   const [copied, setCopied] = useState(false);
-  const email = "talento@synergyglobal.com"; 
+  const email = "consultoressmya@gmail.com"; 
 
   const handleCopy = () => {
     navigator.clipboard.writeText(email);

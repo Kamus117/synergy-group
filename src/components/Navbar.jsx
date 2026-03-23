@@ -77,7 +77,7 @@ const Navbar = ({ activeTab, setActiveTab }) => {
         </ul>
 
         <div className={styles.socialIcons}>
-          <a href="#" className={styles.iconLink}><PiLinkedinLogo size={24} /></a>
+          <a href="https://www.linkedin.com/company/synergygroupar/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}><PiLinkedinLogo size={24} /></a>
         </div>
       </div>
     </nav>

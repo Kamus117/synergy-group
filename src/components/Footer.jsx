@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
-import { PiInstagramLogo, PiFacebookLogo, PiLinkedinLogo, PiYoutubeLogo, PiEnvelopeSimple, PiPhone } from 'react-icons/pi';
+import { PiInstagramLogo, PiFacebookLogo, PiLinkedinLogo, PiEnvelopeSimple, PiPhone } from 'react-icons/pi';
 
 const Footer = ({ setActiveTab }) => {
   const tabs = ['Inicio', 'Nuestra identidad', 'El problema', 'Nuestras capacidades', 'Nuestros líderes', 'Unirse', 'Contacto'];
@@ -42,29 +42,23 @@ const Footer = ({ setActiveTab }) => {
           <h4 className={styles.columnTitle}>Conectar</h4>
           
           <div className={styles.contactInfo}>
-            <a href="mailto:contacto@synergyglobal.com" className={styles.contactItem}>
-              <PiEnvelopeSimple size={20} /> contacto@synergyglobal.com
+            <a href="mailto:consultoressmya@gmail.com" className={styles.contactItem}>
+              <PiEnvelopeSimple size={20} /> consultoressmya@gmail.com
             </a>
             <span className={styles.contactItem}>
-              <PiPhone size={20} /> +54 (11) --- ----
-            </span>
-            <span className={styles.contactItem}>
-              <PiPhone size={20} /> +34 --- ----
+              <PiPhone size={20} /> +54 (11) 41594083 (ARG)
             </span>
           </div>
 
           <div className={styles.socialIcons}>
-            <a href="https://www.instagram.com/synergygroup/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+            <a href="https://www.instagram.com/synergygroup.global?igsh=MTR3dWZ0NjI5Mmp5aQ==" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
               <PiInstagramLogo size={22} />
             </a>
-            <a href="https://www.facebook.com/synergygrouparg/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
+            <a href="https://www.facebook.com/share/1DPbqjxbWo/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
               <PiFacebookLogo size={22} />
             </a>
-            <a href="#" className={styles.iconLink}>
+            <a href="https://www.linkedin.com/company/synergygroupar/" target="_blank" rel="noopener noreferrer" className={styles.iconLink}>
               <PiLinkedinLogo size={22} />
-            </a>
-            <a href="#" className={styles.iconLink}>
-              <PiYoutubeLogo size={22} />
             </a>
           </div>
         </div>
