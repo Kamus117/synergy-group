@@ -24,6 +24,7 @@
   font-size: 1.2rem;
   line-height: 1.8;
   color: var(--color-gray-dark);
+  text-align: left;
 }
 
 .accordionWrapper {
