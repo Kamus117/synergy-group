@@ -30,65 +30,23 @@ const Contacto = () => {
           </div>
         </div>
 
-        {/* Columna Derecha: Formulario de Diagnóstico */}
+        {/* Columna Derecha: Enlace al Formulario de Diagnóstico */}
         <div className={styles.formColumn}>
           <div className={styles.formHeader}>
-            <h2>Iniciemos una conversación estratégica.</h2>
+            <h2>Diagnóstico Estratégico</h2>
+            <p className={styles.formDescription}>
+              Comenzar a transformar su institución requiere entender su realidad. Le invitamos a completar nuestro formulario de diagnóstico para que nuestro equipo pueda evaluar sus desafíos y diseñar una solución a medida.
+            </p>
           </div>
 
-          <form className={styles.contactForm}>
-            
-            {/* Información Básica */}
-            <h3 className={styles.formSectionTitle}>Información Básica</h3>
-            
-            <div className={styles.formGroup}>
-              <label htmlFor="nombre">Nombre y Apellido *</label>
-              <input type="text" id="nombre" className={styles.input} required />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="organizacion">Organización / Institución *</label>
-              <input type="text" id="organizacion" className={styles.input} required />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="email">Correo Electrónico *</label>
-              <input type="email" id="email" className={styles.input} required />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="telefono">Teléfono de Contacto (con prefijo de país)</label>
-              <input type="tel" id="telefono" className={styles.input} />
-            </div>
-
-            {/* Perfil del Desafío */}
-            <h3 className={styles.formSectionTitle} style={{ marginTop: '2rem' }}>Perfil del Desafío</h3>
-            
-            <div className={styles.formGroup}>
-              <label htmlFor="audiencia">¿A quiénes afecta principalmente el desafío? (Ej.: empleados, comunidad, funcionarios, otros)</label>
-              <input type="text" id="audiencia" className={styles.input} />
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="reto">¿Cuál es el mayor reto que enfrenta hoy su organización?</label>
-              <textarea id="reto" className={styles.textarea} rows="4"></textarea>
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="intentos">¿Qué soluciones ha intentado?</label>
-              <textarea id="intentos" className={styles.textarea} rows="4"></textarea>
-            </div>
-
-            <div className={styles.formGroup}>
-              <label htmlFor="solucion_buscada">¿Qué tipo de solución está buscando?</label>
-              <textarea id="solucion_buscada" className={styles.textarea} rows="4"></textarea>
-            </div>
-
-            <button type="button" className={styles.submitBtn}>
-              Iniciar Diagnóstico Estratégico
-            </button>
-            
-          </form>
+          <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSchlYlD_Mo0_l5dG3N3pwGDvbbl3XfnMLTve301I7XjCoJPrA/viewform" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.submitBtn}
+          >
+            Iniciemos una conversación estratégica.
+          </a>
         </div>
 
       </div>

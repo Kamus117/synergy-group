@@ -272,20 +272,20 @@
   .profCard {
     width: 100%;
     margin: 0;
-    height: 420px;
+    height: 400px;
   }
   .circleBg, .quoteOverlay {
     width: 280px;
     height: 280px;
-    top: 30px;
+    top: 40px;
   }
   .profImage {
-    width: 270px;
-    bottom: 60px;
+    width: 260px;
+    bottom: 80px;
   }
   .namePill {
     font-size: 1rem;
-    bottom: 20px;
+    bottom: 45px;
     padding: 10px 20px;
   }
   .quoteOverlay p {
