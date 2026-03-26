@@ -10,8 +10,9 @@ export const lideresData = {
     perfil: 'Médico psiquiatra con +40 años de trayectoria. Exasesor regional de la OPS/OMS y especialista de la CICAD/OEA.',
     impacto: 'Ha liderado la arquitectura de políticas públicas en América Latina y Europa, transformando la visión global hacia la reducción de la demanda.',
     quote: 'Una política pública adecuada protege; por cada dólar invertido en prevención real, devolvemos siete a la sociedad en bienestar y productividad.',
-    image: '',
-    color: 'var(--color-primary)'
+    image: '/Luis.png',
+    color: 'var(--color-primary)',
+    imageStyle: { width: '280px', bottom: '65px' }
   },
   dario: {
     id: 'dario',
@@ -53,7 +54,7 @@ const Directivos = ({ setActiveTab }) => {
         {profesionales.map((prof) => (
           <div key={prof.id} className={styles.profCard} onClick={() => setActiveTab(`Perfil-${prof.id}`)}>
             <div className={styles.circleBg} style={{ '--card-bg': prof.color }}></div>
-            {prof.image && <img src={prof.image} alt={prof.name} className={styles.profImage} />}
+            {prof.image && <img src={prof.image} alt={prof.name} className={styles.profImage} style={prof.imageStyle} />}
             <div className={styles.namePill}>
               {prof.name}
             </div>
